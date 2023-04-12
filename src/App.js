@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-import Project from './components/Project';
+// import Project from './components/Project';
 import Softskill from './components/Softskill';
 import Hardskill from './components/Hardskill';
 
@@ -9,8 +9,10 @@ function App() {
    
    
     <div>
-      <Softskill/>
+      {/* <Softskill/>
+       */}
 
+<Hardskill/>
 
       
     </div>

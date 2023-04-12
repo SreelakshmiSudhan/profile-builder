@@ -34,10 +34,10 @@ const [message, setMessage] = useState('');
 ];
 
 //to get value
-const handleChange = event => {
-    setSelectedOptions(event.target.value);
-    console.log(event.target.value);
-  };
+// const handleChange = event => {
+//     setSelectedOptions(event.target.value);
+//     console.log(event.target.value);
+//   };
      
 
  //console.log(selectedOptions.value);
@@ -48,7 +48,7 @@ function handleSelect(data) {
 }
 
   const getValueforhard = () => {
-    
+
   }
   return (
       <div>
@@ -58,7 +58,6 @@ function handleSelect(data) {
           options={optionList}
           placeholder="Select minimum five skill"
           value={selectedOptions}
-          onChange={handleChange}
           isSearchable={true}
           isMulti
         />

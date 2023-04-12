@@ -1,9 +1,59 @@
-{
-    "profile" : [
-        { "firstName":"John", "lastName":"Doe" },
-        { "firstName":"Anna", "lastName":"Smith" },
-        { "firstName":"Peter", "lastName":"Jones" }
-    ]
-}
+[
+    {
+        "id": 1,
+        "profile": {
+            "firstname": "John",
+            "lastname": "Graham",
+            "profilpic": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fpixabay.com%2Fvectors%2Fblank-profile-picture-mystery-man-973460%2F&psig=AOvVaw1pm2VqES5lG-6MMoRCg8mu&ust=1681362336647000&source=images&cd=vfe&ved=0CBEQjRxqFwoTCNiIpfjIo_4CFQAAAAAdAAAAABAE"
+        },
+        "educationalsummary": {
+            "university": {
+                "universityname": "Madras University",
+                "year": "2009",
+                "course": "Masters Degree in Computer Science"
+            },
+            "secondayhighschool": {
+                "name": "CBSE",
+                "year": "2003"
+            },
+            "highschool": {
+                "name": "CBSE",
+                "year": "2005"
+            }
+        },
+        "professionalsummary": "Likable and dedicated IT consultant with over 5 years of
+        experience in a fast-paced fin-tech company. Eager to offer superb analytical and computer skills to
+         help ABC Inc grow its client base. In previous roles recognized for top company-wide quality 
+         satisfaction rating (over 99%). Also, reduced client wait time by 20% and boosted 
+         client satisfaction ratings by more than 40% in a single quarter",
 
-//json file
+        "professionalexperiences": {
+            "experience1": {
+                "company": "Deloitte",
+                "duration": "5years",
+                "technicality": "Software Testing",
+                "project": "Walmart",
+                "prjtDuration": "4years"
+            },
+            "experience2": {
+                "company": "TSC",
+                "duration": "2years",
+                "technicality": "Agile Technology"
+            },
+            "internship": {
+                "company": "Intel",
+                "duration": "1year"
+            },
+            "location": "Bangalore",
+            "skills": {
+                "softskill": "Innovation,Logical thinking,Adaptability,Multitasking,Analytical reasoning",
+                "hardskil": "Database knowledge,Linux commands,Agile Testing,Software Development Life Cycle (SDLC),Automation Testing"
+            },
+            "contacts": {
+                "phone": "+9134567890",
+                "email": "john@gmail.com",
+                "linkdin": "john@linkdin"
+            }
+        },
+    }
+]

@@ -1,85 +1,126 @@
-import React from "react";
-import { useRef, useState } from 'react';
+// import React from "react";
+// import { useRef, useState } from 'react';
 
 
 
-const Hardskill = () => {
-    console.log('hardskills');
+// const Hardskill = () => {
+//     console.log('hardskills');
 
 
-//     const inputRef = useRef("");
-//   const [hardValues, sethardValues] = useState('');
+// //     const inputRef = useRef("");
+// //   const [hardValues, sethardValues] = useState('');
 //   const [arr, setArray] = useState([]);
-// 
+// // 
 
-  
-  //array push
 
-    //to get value
-//      const handleChange =(e) => {
-//         // sethardValues(inputRef.current.value);
-//         // setArray([...arr,e.target.value]);
-// //
+//   //array push
 
+//     //to get value
+// //      const handleChange =(e) => {
+// //         // sethardValues(inputRef.current.value);
+// //         // setArray([...arr,e.target.value]);
+// // //
+
+
+// //     };
+//     const handleClick=(e)=>{
+//         e.preventDefault();
+//         console.log(arr);
 
 //     };
-    // const handleClick=(e)=>{
-    //     e.preventDefault();
-    //     console.log(arr);
-        
-    // };
 
-    // const add=(e)=>{
-    //     setArray([...arr,e.target.value]);
-    // };
-const handleChange=(e)=>{
-    // setArray([...arr,e.target.value]);
-};
+//     // const add=(e)=>{
+//     //     setArray([...arr,e.target.value]);
+//     // };
+// const handleChange=(e)=>{
+//     // setArray([...arr,e.target.value]);
+// };
 
-const add=(e)=>{
-    e.preventDefault();
-    setArray([...arr,e.skills]);
-//    setArray([...arr," "]);
-    // setArray([])
+// const add=(e)=>{
+//     e.preventDefault();
+//     setArray([...arr,e.skills]);
+// //    setArray([...arr," "]);
+//     // setArray([])
+
+// };
+// const submit=(e)=>{
+//     e.preventDefault();
+//     console.log(arr);
+// };
+//     return (
+//         <div>
+//             <h1>
+//                 HardSkills
+
+//             </h1>
+
+//      <form onSubmit={submit}>
+//         <input type="text" name="skills" onChange={e=>handleChange} />
+//         <button type="button" onClick={add}>Add+</button>
+//         <button type="submit" >Submit</button>
+//      </form>
+//             <form onSubmit={handleClick}>
+//                 <input type='text'  id='hardskill'  onChange={handleChange}/>
+//                 <button onClick={add}>Add+</button>
+
+//                 <input type="submit" value="submit"/>
+
+//             </form> 
+//          <p>HardSkills : </p>
+//             <ul>
+//                  {/* <li> {hardValues}</li>  */}
+//             </ul> 
+//              <div>
+
+//             </div>
+
+//          </div>
+
+//     );
+
+
+// };
+// export default Hardskill;
+
+
+
+import React, { useState } from "react";
+import axios from "axios";
+
+const Hardskill = () => {
+    const [hardValues , sethardValues] = useState('');
     
-};
-const submit=(e)=>{
-    e.preventDefault();
-    console.log(arr);
-};
+      const handleChange = (e) => {
+        sethardValues({ ...hardValues, skills: e.target.value });
+    }; 
+
+    const submitValue = (e) => {
+        axios.get()
+        .then((resp)=> {
+            console.log({hardValues});
+            sethardValues({hardValues});
+
+
+        })
+        e.preventDefault();
+
+    }
+
+    
+
+
     return (
+
         <div>
-            <h1>
-                HardSkills
+            <form onSubmit={submitValue}>
+//         <input type="text" name="skills" onChange={e=>handleChange} />
+//         <button type="button">Add+</button>
+//         <button type="submit" >Submit</button>
+//      </form>
 
-            </h1>
-     
-     <form onSubmit={submit}>
-        <input type="text" name="skills" onChange={e=>handleChange} />
-        <button type="button" onClick={add}>Add+</button>
-        <button type="submit" >Submit</button>
-     </form>
-            {/* <form onSubmit={handleClick}>
-                <input type='text'  id='hardskill'  onChange={handleChange}/>
-                <button onClick={add}>Add+</button>
+</div>
 
-                <input type="submit" value="submit"/>
+    )
+}
 
-            </form> */}
-            {/* <p>HardSkills : </p>
-            <ul>
-                {/* <li> {hardValues}</li> */}
-                {/* </ul> } */}
-             <div>
-
-            </div>
-
-         </div>
-
-    );
-
-
-};
-export default Hardskill;
-
-
+export default React;
